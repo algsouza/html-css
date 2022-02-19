@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudoelement</title>
+</head>
+<body>
+
+    <style>
+        a{
+            text-decoration: none;/* tira sublinhado do texto*/
+        }
+
+        a:visited{
+            color: rgb(26, 29, 71);/*depois de clicado fica na cor escolhida*/
+        }
+
+        a:hover{
+            text-decoration: underline;/* ao clicar fica na cor escolhida*/
+            color: coral;
+        }
+
+        a:active{
+            color: rgb(0, 0, 0);/* ao clicar fica na cor escolhida*/
+        }
+                                /* Pseudo - Element*/
+
+
+        a::before{  /* before antes */
+                content: '⇒';
+                color: darkorange;
+}
+        a::after{  /* after depois / fonte de pesquisa Tabela de Símbolos Especiais, Dingbats e Desenhos em HTML*/ 
+            content: '⇐';
+            color: darkseagreen;
+        }
+    </style>
+    <h1>Pseudo-Class e Element</h1>
+
+    <li><a href="https://github.com/algsouza">GitHub</a></li>
+    <li><a href="https://www.youtube.com/channel/UCMPc7VAkJFVKBqhs8IYjXjw">youtube</a></li>
+    
+    
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudoclasse</title>
+</head>
+<body>
+    <style>
+
+
+        /*SELETORES PERSONALIZADOS*/
+        
+        /*
+          # = id
+          . = class
+          : PSEUDO-CLASS
+          :: PSEUDO-ELEMENT
+          > CLILDREN  "FILHO DE"
+        */
+
+        body{
+            background: rgb(233, 229, 229);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        div{
+            background-color: rgb(248, 203, 172);
+            height: 80px;
+            width: 80px;
+            text-align: center;
+            border: 1px solid  black;
+            border-radius: 500px;
+            display: inline-block;
+         }
+
+        #d1:hover{
+            background-color: chartreuse;
+            
+            
+            
+        }
+
+        #d2:hover{
+            background: cyan;
+        }
+        #d3:hover{
+            background-color: darkolivegreen;
+        }
+    </style>
+    <h1> Estudando pseudoclasse :</h1>
+    <h2>Usando exemplo :hover</h2>
+    <div id="d1">1</div>
+    <div id="d2">2</div>
+    <div id="d3">3</div>
+</body>
+</html>
