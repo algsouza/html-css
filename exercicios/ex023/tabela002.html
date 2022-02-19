@@ -12,33 +12,41 @@
         }
         table{
             width: 500px;
-            border: 1px solid black;
             border-collapse: collapse; /*tira a sepação das linhas*/
-            font-family: Arial, Helvetica, sans-serif;
+            
         }
+           
         caption{
             background-color: rgb(116, 116, 116);
-            height: 20px;
-            padding: 5px;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 15px;
+            height: 30px;
+            padding: 10px;
+            font-size: 20px;
             color: rgb(238, 235, 235);
         }
+        /* aqui abaixo zebrando a celulas
+        obs podemos usar (2n) , (even) significa par */
+        tbody > tr:nth-child(odd){
+            background-color: rgb(148, 148, 148);
+            color: aliceblue;
+            
+        }
+            
         thead{/* cabeçario da tabela */
           border-collapse: collapse; 
-          background-color: cadetblue;
+          background-color: hsla(0, 5%, 8%, 0.884);
           color: white;
           text-align: center;
         }
-
-        td{
-            height: 40px;
-            border: 1px solid rgb(252, 6, 6);
+        td ,th{
+            height: 30px;
+            border: 1px solid rgb(122, 108, 108);
             text-align: center;
         }
+
+       
        
         tfoot{
-            background-color: rgb(107, 107, 107);
+            background-color: hsla(0, 5%, 8%, 0.884);
             color: aliceblue;
         }
     </style>
@@ -50,96 +58,104 @@
         <table> 
             <caption>Posição unidade federativa da População</caption>
 
+            <!-- sempre que for titulo th
+                 sempre que for dado td  -->
+
         <thead>
             <th scope="col">Estados</th>
-            <th scope="col">População</th>
+             <!-- aqui abaixo alterei a largura da celulas populacao -->
+            <th scope="col" style="width:50px; padding:10px;">População</th>
         </thead>
            
         <tbody>
-            <tr class="sp">
+            <tr>
                 <td>São Paulo</td>
-                <td>45 919 049</td>
+                <td>45.919,049</td>
             </tr>
             
             <tr>
                 <td>Minas Gerais</td>
-                <td>21 168 791</td>
+                <td>21.168,791</td>
             </tr>
                
             <tr>
                 <td>Rio de Janeiro</td>
-                <td>17 264 943</td>
+                <td>17.264,943</td>
             </tr>
                
             <tr>
                 <td>Bahia</td>
-                <td>14 873 064</td>
+                <td>14.873,064</td>
             </tr>
                 
             <tr>
                 <td>Paraná</td>
-                <td>11 433 957</td>
+                <td>11.433,957</td>
             </tr>
                 
             <tr>
                 <td>Rio Grande do sul</td>
-                <td>11 433 957</td>
+                <td>11.433,957</td>
             </tr>
                 
             <tr>
                 <td>Pernanbuco</td>
-                <td>9 557 071</td>
+                <td>9.557,071</td>
             </tr>
 
             <tr>
                 <td>Ceará</td>
-                <td>9 132 078</td>
+                <td>9.132,078</td>
             </tr>
              
             <tr>
                 <td>Pará</td>
-                <td>8 602 865</td>
+                <td>8.602,865</td>
             </tr>
                 
             <tr>
                 <td>Santa Catarina</td>
-                <td>7 164 788</td>
+                <td>7.164,788</td>
             </tr>
                 
             <tr>
                 <td>Maranhão</td>
-                <td>7 075 181</td>
+                <td>7.075,181</td>
             </tr>
             
             <tr>
                 <td>Goias</td>
-                <td>7 018 354</td>
+                <td>7.018,354</td>
             </tr>
             
             <tr>
                 <td>Amazonas</td>
-                <td>4 144 597</td>
+                <td>4.144,597</td>
             </tr>
                
             <tr>
                 <td>Espírito Santo</td>
-                <td>4 018 650</td>
+                <td>4.018,650</td>
             </tr>
              
             <tr>
                 <td>Paraiba</td>
-                <td>4 018 127</td>
+                <td>4.018,127</td>
             </tr>
             
             <tr>
                 <td>Rio Grande do Norte</td>
-                <td>3 506 853</td>
+                <td>3.506,853</td>
             </tr>
         </tbody>
 
         <tfoot>
+            <!-- usamos row porque o resultado de habitantes esta
+                 ao lado e nao abaixo como estados -->
             <th scope="row"> Total de Habitantes</th>
-            <th scope="row">83 008 65</th>
+
+            <!-- aqui a baixo é dados por isso usamos td -->
+            <td scope="row" class="num"> <strong>83.008,65</td>
         </tfoot>
     </table>
 </body>
