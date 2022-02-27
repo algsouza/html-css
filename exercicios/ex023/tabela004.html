@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 004</title>
+    <style>
+        body{
+            background-color: rgb(230, 230, 230);
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        thead{
+            position: relative;
+        }
+        thead >th{
+            position: relative;
+            
+        }
+
+            
+        table{
+            width: 500px;
+            border-collapse: collapse;
+
+        }
+        
+        th{
+            border: 1px solid;
+            padding: 6px;
+        }
+        tr,td{
+            border: 1px solid;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exércicios de Tabela</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Grupo</th>
+                <th>Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</thead>
+            </tr>
+        </thead>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Mulheres</th>
+            <td>Ana Maria Santos</td>
+            <td>Allen</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Souza</td>
+            <td>Kulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Cláudia Melo</td>
+            <td>Oblivion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <th rowspan="3" scope="rowgroup">Homens</th>
+            <td>Bruno Mendonça</td>
+            <td>Allen</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Daniel Lourenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>star Warrs 5</td>
+            <td>Taxi Drive</td>
+            <td>Toy Story</td>
+        </tr>
+    </table>
+</body>
+</html>

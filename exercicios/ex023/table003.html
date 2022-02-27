@@ -4,69 +4,56 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Mesclagem de celulas</title>
     <style>
 
-        /* aqui abaixo usando tags para centralizar tabela */
-        main ,table{
-            max-width: 1000px;
-            margin: auto; 
-        }
         body{
-            background-color: rgb(241, 241, 241);
-        }
-
-        h1{
-            text-align: center;
-        }
-
-        tbody{
             font-family: Arial, Helvetica, sans-serif;
         }
-
+        caption{
+            text-align: center;
+            background-color: aqua;
+        }
         table{
-            border: 1px solid black;
-            border-collapse: collapse;
             width: 400px;
+            border:1px solid;
+            border-collapse:collapse ;
+            
+            
+        }
+
+        td{ /* Linhas Horinzontais*/
+            border: 1px solid;
+            padding: 10px;
             text-align: center;
         }
-        td{
-            border: 1px solid black;
-            padding: 5px;
-        }
- </style>
-            
-           
+    </style>
 </head>
 <body>
-    <h1 style="font-family: Arial, Helvetica, sans-serif;">Mesclagem de Celulas</h1>
-
-    <!-- Mesclagem e linhas (rowspan ) -->
-    <!-- Mesclagem em colunas( colspan) -->
-
-    <main>
-        <table>
-            <tr>
-                <td>A</td>
-                <td colspan="2" style="background-color: aqua;">B</td>
-                <!-- <td>C</td> -->
-            </tr>
-            <tr>
-                <td rowspan="3" style="background: yellow;">D</td>
-                <td>E</td>
-                <td rowspan="3" style="background-color: blueviolet;">F</td>
-            </tr>
-            <tr>
-                <!-- <td>G</td> -->
-                <td>H</td>
-                <!-- <td>I</td> -->
-            </tr>
-            <tr>
-                <!-- <td>J</td> -->
-                <td>L</td>
-                <!-- <td>M</td> -->
-            </tr>
-        </table>
-    </main>
+    <Caption>
+        Mesclagem de Células
+    </Caption>
+    <table>
+        <tr>
+            <td>A</td>
+            <td>B</td>
+            <td>C</td>
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+        </tr>
+    </table>
 </body>
 </html>
